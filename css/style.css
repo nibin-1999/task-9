@@ -1,6 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #253858;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #253858;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family:  Arial;
+	font-weight: 500;
+	color: #42526E;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+
+@font-face {
+    font-family: 'antonio_1';
+    src: url("../fonts/Antonio-Bold.woff2") format("woff2");
+    src: url("../fonts/Antonio-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'antonio_2';
+    src: url("../fonts/Antonio-Regular.woff2") format("woff2");
+    src: url("../fonts/Antonio-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'antonio_3';
+    src: url("../fonts/Antonio-Medium.woff2") format("woff2");
+    src: url("../fonts/Antonio-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'antonio_4';
+    src: url("../fonts/Antonio-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Antonio-SemiBold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
 }
 header {
     width: 90%;
@@ -24,14 +131,17 @@ header nav.right ul{
     align-items: center;
 }
 header nav.right ul li{
-    margin-right: 24px;
+    margin-right: 80px;
 }
 header nav.right ul li a{
     text-decoration: none;
     display: block;
-    color: rgb(117, 116, 116);
+    color: #868686;
     font-weight: 700;
     font-size: 20px;
+}
+header nav.right ul li:last-child {
+    margin-right: 0;
 }
 header nav.right ul li a.link:hover {
     border-bottom: 2px solid blue;
@@ -39,7 +149,96 @@ header nav.right ul li a.link:hover {
     color: #000;
 }
 header nav.right ul li a.login-button {
-    border: 2px solid blue;
+    border: 1px solid rgb(178, 178, 214);
     padding: 16px 20px;
-    color: blue;
+    color: rgb(178, 178, 214);
+}
+
+header nav.right ul li a.login-button:hover {
+    border: 1px solid blue;
+    color: #00f;
+}
+#spotlight { 
+    padding: 0 0 0 80px;
+    display: flex;
+    margin-top: 10px;
+    height: calc(100vh - 100px);
+}
+
+#spotlight .left { 
+    width: 30%;
+}
+
+#spotlight .left .top { 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 55px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+#spotlight .left .top ul { 
+}
+
+#spotlight .left .top ul li.num { 
+    font-size: 30px;
+    font-weight: 600;
+    color: #b87c78;
+    font-family: antonio_4;
+    word-spacing: 2rem;
+}
+
+#spotlight .left .top ul li.let {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    width: 10%;
+    color:  #868686;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+
+#spotlight .left .bottom { 
+    width: 42.5%;
+    background: #f7f4f4;
+    position: absolute;
+    z-index: 2;
+    padding: 7% 7% 5.7% 5%;
+}
+
+#spotlight .left .bottom h3 { 
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+#spotlight .left .bottom p { 
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+#spotlight .left .bottom .button { 
+    padding: 15px 20px;
+    background: #7C8EE9;
+    color: #fff;
+    font-weight: 500;
+}
+
+#spotlight .right { 
+    width: 70%;
+}
+
+#spotlight .right .content { 
+    position: relative;
+    z-index: 1;
+}
+
+#spotlight .right .content img { 
+    width: 100%;
+    display: block;
+
 }
