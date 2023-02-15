@@ -341,3 +341,107 @@ header nav.right ul li a.login-button:hover {
     background: #7c8ee9;
     color: #fff;
 }
+
+
+
+
+#work { 
+    width: 100%;
+    padding-left: 80px;
+    margin-bottom: 50px;
+}
+
+#work .top { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#work .top h2 { 
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 32%;
+    margin-bottom: 30px;
+}
+#work .top  h2::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #7c8ee9;
+}
+#work .top  h2:hover::after {
+    width: 18%;
+}
+
+#work .top ul { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#work .top ul li { 
+    width: 25%;
+}
+
+#work .top ul li:last-child {
+    margin-right: 50px;
+}
+
+#work .top ul li img { 
+    width: 100%;
+    display: block;
+}
+
+#work .bottom { 
+   width: 100%;
+    
+}
+
+#work .bottom ul { 
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+#work .bottom ul li { 
+    width: 35%;
+    margin-right: 50px;
+}
+
+#work .bottom ul li:last-child {
+    margin-right: -75px;
+}
+
+#work .bottom ul li img.main-pic { 
+    width: 100%;
+    display: block;
+}
+
+
+#work .bottom ul li div.background {
+    padding: 24px 20px;
+    background: #f5f2f2;
+    width: 82%;
+    position: relative;
+    left: 0px;
+    bottom: 95px;
+}
+
+#work .bottom ul li div.background h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#work .bottom ul li div.background span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #72a1cc;
+}
+
+#work .bottom ul li div.background span img.sub-pic {
+    width: 4%;
+    margin-right: 10px;
+}
+
