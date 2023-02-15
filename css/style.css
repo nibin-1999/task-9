@@ -109,6 +109,11 @@ br.clear {
 ::-ms-input-placeholder {
   color: #C0CCDA;
 }
+
+
+
+
+
 header {
     width: 90%;
     margin: 0 auto;
@@ -158,11 +163,13 @@ header nav.right ul li a.login-button:hover {
     border: 1px solid blue;
     color: #00f;
 }
+
+
+
+
 #spotlight { 
     padding: 0 0 0 80px;
     display: flex;
-    margin-top: 10px;
-    height: calc(100vh - 100px);
 }
 
 #spotlight .left { 
@@ -174,7 +181,7 @@ header nav.right ul li a.login-button:hover {
     justify-content: space-between;
     padding-left: 55px;
     margin-top: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 
@@ -201,10 +208,10 @@ header nav.right ul li a.login-button:hover {
 
 #spotlight .left .bottom { 
     width: 42.5%;
-    background: #f7f4f4;
+    background: #e2e2e2;
     position: absolute;
     z-index: 2;
-    padding: 7% 7% 5.7% 5%;
+    padding: 7% 5%;
 }
 
 #spotlight .left .bottom h3 { 
@@ -241,4 +248,96 @@ header nav.right ul li a.login-button:hover {
     width: 100%;
     display: block;
 
+}
+
+
+
+
+#knowmore { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 11%;
+
+}
+
+#knowmore aside { 
+    width: 30%;
+}
+
+#knowmore aside .top { 
+    width: 100%;
+    position: relative;
+}
+
+#knowmore aside .top img { 
+    width: 100%;
+    display: inline-block;
+}
+
+#knowmore aside .bottom { 
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding: 21px 27px;
+    background: #e7e5e5;
+    position: relative;
+    left: 0px;
+    bottom: 90px;
+
+}
+
+#knowmore aside .bottom ul { 
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5px;
+}
+
+#knowmore aside .bottom ul li { 
+    margin-right: 15px;
+    width: 100%;
+}
+
+#knowmore aside .bottom ul li img { 
+    width: 100%;
+    display: block;
+}
+
+#knowmore aside .bottom ul li:last-child {
+    margin-right: 0;
+}
+#knowmore .right { 
+    width: 65%;
+    padding-top: 7%;
+}
+
+#knowmore .right h2 { 
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 32%;
+    margin-bottom: 30px;
+}
+#knowmore .right h2::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #7c8ee9;
+}
+#knowmore .right h2:hover::after {
+    width: 24%;
+}
+#knowmore .right p { 
+    width: 68%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b8b8b8;
+    margin-bottom: 50px;
+}
+
+#knowmore .right .button { 
+    padding: 17px 25px;
+    background: #7c8ee9;
+    color: #fff;
 }
